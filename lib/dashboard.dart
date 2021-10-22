@@ -1,5 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
+import 'package:homeresourcemonitor/devicespage.dart';
+import 'package:homeresourcemonitor/homeresources/air.dart';
+import 'package:homeresourcemonitor/homeresources/electricity.dart';
+import 'package:homeresourcemonitor/homeresources/gas.dart';
+import 'package:homeresourcemonitor/homeresources/temperature.dart';
+import 'package:homeresourcemonitor/homeresources/water.dart';
+import 'package:homeresourcemonitor/settingspage.dart';
+
+import 'reusabledrawer.dart';
 
 class DashboardPage extends StatefulWidget {
   @override
@@ -19,7 +28,10 @@ class DashboardPageState extends State<DashboardPage> {
           color: Colors.blue[300],
           child: InkWell(
             onTap: () {
-              print('1 was clicked');
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => WaterDetailsPage()),
+              );
             },
             child: Container(
               padding: const EdgeInsets.all(8),
@@ -35,7 +47,11 @@ class DashboardPageState extends State<DashboardPage> {
           color: Colors.yellow[400],
           child: InkWell(
             onTap: () {
-              print('1 was clicked');
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => ElectricityDetailsPage()),
+              );
             },
             child: Container(
               padding: const EdgeInsets.all(8),
@@ -51,7 +67,10 @@ class DashboardPageState extends State<DashboardPage> {
           color: Colors.green[300],
           child: InkWell(
             onTap: () {
-              print('1 was clicked');
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => GasDetailsPage()),
+              );
             },
             child: Container(
               padding: const EdgeInsets.all(8),
@@ -67,7 +86,11 @@ class DashboardPageState extends State<DashboardPage> {
           color: Colors.orange[300],
           child: InkWell(
             onTap: () {
-              print('1 was clicked');
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => TemperatureDetailsPage()),
+              );
             },
             child: Container(
               padding: const EdgeInsets.all(8),
@@ -83,7 +106,10 @@ class DashboardPageState extends State<DashboardPage> {
           color: Colors.indigo[300],
           child: InkWell(
             onTap: () {
-              print('1 was clicked');
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => AirDetailsPage()),
+              );
             },
             child: Container(
               padding: const EdgeInsets.all(8),
@@ -117,85 +143,8 @@ class DashboardPageState extends State<DashboardPage> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('WordPair Generator'), actions: <Widget>[]),
-      drawer: Container(
-        width: MediaQuery.of(context).size.width * 0.65,
-        child: Drawer(
-          // Add a ListView to the drawer. This ensures the user can scroll
-          // through the options in the drawer if there isn't enough vertical
-          // space to fit everything.
-          child: ListView(
-            // Important: Remove any padding from the ListView.
-            padding: EdgeInsets.zero,
-            children: [
-              const DrawerHeader(
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                ),
-                child: Text('Menu'),
-              ),
-              ListTile(
-                leading: Icon(Icons.dashboard),
-                title: const Text('Dashboard'),
-                onTap: () {
-                  // Update the state of the app
-                  // ...
-                  // Then close the drawer
-                  Navigator.pop(context);
-                },
-              ),
-              ListTile(
-                leading: Icon(Icons.insert_chart_outlined_rounded),
-                title: const Text('Analytics'),
-                onTap: () {
-                  // Update the state of the app
-                  // ...
-                  // Then close the drawer
-                  Navigator.pop(context);
-                },
-              ),
-              const SizedBox(height: 7),
-              Divider(
-                color: Colors.grey[600],
-                thickness: 1.5,
-                indent: 10,
-                endIndent: 10,
-              ),
-              const SizedBox(height: 7),
-              ListTile(
-                leading: Icon(Icons.devices_rounded),
-                title: const Text('Meter Devices'),
-                onTap: () {
-                  // Update the state of the app
-                  // ...
-                  // Then close the drawer
-                  Navigator.pop(context);
-                },
-              ),
-              ListTile(
-                leading: Icon(Icons.settings),
-                title: const Text('Settings'),
-                onTap: () {
-                  // Update the state of the app
-                  // ...
-                  // Then close the drawer
-                  Navigator.pop(context);
-                },
-              ),
-              ListTile(
-                leading: Icon(Icons.person),
-                title: const Text('Profile'),
-                onTap: () {
-                  // Update the state of the app
-                  // ...
-                  // Then close the drawer
-                  Navigator.pop(context);
-                },
-              ),
-            ],
-          ),
-        ),
-      ),
+      appBar: AppBar(title: Text('Dashboard'), actions: <Widget>[]),
+      drawer: myDrawer(context),
       body: _buildGrid(),
     );
   }
