@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
+import 'package:homeresourcemonitor/dashboard.dart';
 import './random_words.dart';
 
 class LoginPage extends StatefulWidget {
@@ -70,7 +71,7 @@ class _LoginPageState extends State<LoginPage> {
                 onPressed: () {
                   Navigator.pushAndRemoveUntil(
                       context,
-                      MaterialPageRoute(builder: (_) => RandomWords()),
+                      MaterialPageRoute(builder: (_) => DashboardPage()),
                       (Route<dynamic> route) => false);
                 },
                 child: Text(
