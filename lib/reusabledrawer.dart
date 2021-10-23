@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'dashboard.dart';
 import 'devicespage.dart';
+import 'profile.dart';
 import 'settingspage.dart';
 
 Widget myDrawer(BuildContext context) {
@@ -72,9 +73,10 @@ Widget myDrawer(BuildContext context) {
             leading: Icon(Icons.person),
             title: const Text('Profile'),
             onTap: () {
-              // Update the state of the app
-              // ...
-              // Then close the drawer
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ProfilePage()),
+              );
             },
           ),
         ],
