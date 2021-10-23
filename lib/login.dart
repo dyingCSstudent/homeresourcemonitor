@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
 import 'package:homeresourcemonitor/dashboard.dart';
-import './random_words.dart';
 
 class LoginPage extends StatefulWidget {
   @override
