@@ -109,7 +109,7 @@ class DashboardPageState extends State<DashboardPage> {
                       size: 50.0,
                       color: Colors.white,
                     ),
-                    backgroundColor: (Colors.grey)!,
+                    backgroundColor: (Colors.grey),
                     progressColor: Colors.white,
                     circularStrokeCap: CircularStrokeCap.round,
                   ),

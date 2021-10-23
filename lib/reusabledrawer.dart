@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:homeresourcemonitor/login.dart';
 
+import 'analytics.dart';
 import 'dashboard.dart';
 import 'devicespage.dart';
 import 'profile.dart';
@@ -36,9 +38,10 @@ Widget myDrawer(BuildContext context) {
             leading: Icon(Icons.insert_chart_outlined_rounded),
             title: const Text('Analytics'),
             onTap: () {
-              // Update the state of the app
-              // ...
-              // Then close the drawer
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => AnalyticsPage()),
+              );
             },
           ),
           const SizedBox(height: 7),
@@ -76,6 +79,16 @@ Widget myDrawer(BuildContext context) {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => ProfilePage()),
+              );
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.logout),
+            title: const Text('Logout'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => LoginPage()),
               );
             },
           ),
