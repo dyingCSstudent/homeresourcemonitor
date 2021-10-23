@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:homeresourcemonitor/dashboard.dart';
+import 'package:homeresourcemonitor/register.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -12,9 +14,8 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: Text("Login Page"),
-      ),
+      appBar:
+          AppBar(title: Text("Login Page"), automaticallyImplyLeading: false),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
@@ -68,10 +69,10 @@ class _LoginPageState extends State<LoginPage> {
                   color: Colors.blue, borderRadius: BorderRadius.circular(20)),
               child: FlatButton(
                 onPressed: () {
-                  Navigator.pushAndRemoveUntil(
-                      context,
-                      MaterialPageRoute(builder: (_) => DashboardPage()),
-                      (Route<dynamic> route) => false);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => DashboardPage()),
+                  );
                 },
                 child: Text(
                   'Login',
@@ -82,7 +83,28 @@ class _LoginPageState extends State<LoginPage> {
             SizedBox(
               height: 130,
             ),
-            Text('New User? Create Account')
+            Center(
+                child: RichText(
+              text: TextSpan(
+                text: 'New User? ',
+                style: TextStyle(fontSize: 20, color: Colors.black),
+                children: <TextSpan>[
+                  TextSpan(
+                      text: 'Create Account',
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => RegisterPage()),
+                          );
+                        },
+                      style: TextStyle(
+                        color: Colors.blue,
+                      )),
+                ],
+              ),
+            ))
           ],
         ),
       ),

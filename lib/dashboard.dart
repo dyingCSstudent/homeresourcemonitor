@@ -65,7 +65,7 @@ class DashboardPageState extends State<DashboardPage> {
                     height: 10,
                   ),
                   const Text(
-                    "20 / 100",
+                    "215 / 538 L",
                     style: TextStyle(
                         fontWeight: FontWeight.w400,
                         color: Colors.white,
@@ -117,7 +117,7 @@ class DashboardPageState extends State<DashboardPage> {
                     height: 10,
                   ),
                   const Text(
-                    "20 / 100",
+                    "215 / 538 Watts",
                     style: TextStyle(
                         fontWeight: FontWeight.w400,
                         color: Colors.white,
@@ -168,7 +168,7 @@ class DashboardPageState extends State<DashboardPage> {
                     height: 10,
                   ),
                   const Text(
-                    "20 / 100",
+                    "215 / 538 BTU",
                     style: TextStyle(
                         fontWeight: FontWeight.w400,
                         color: Colors.white,
@@ -220,7 +220,7 @@ class DashboardPageState extends State<DashboardPage> {
                     height: 10,
                   ),
                   const Text(
-                    "20 / 100",
+                    "215 / 538 °C",
                     style: TextStyle(
                         fontWeight: FontWeight.w400,
                         color: Colors.white,
@@ -271,7 +271,7 @@ class DashboardPageState extends State<DashboardPage> {
                     height: 10,
                   ),
                   const Text(
-                    "20 / 100",
+                    "215 / 538 µg/m3",
                     style: TextStyle(
                         fontWeight: FontWeight.w400,
                         color: Colors.white,
@@ -324,7 +324,7 @@ class DashboardPageState extends State<DashboardPage> {
                   const SizedBox(
                     height: 10,
                   ),
-                  const Text("20 / 100",
+                  const Text("215 / 538 GB",
                       style: TextStyle(
                           fontWeight: FontWeight.w400,
                           color: Colors.white,
