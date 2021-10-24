@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
-import 'package:homeresourcemonitor/login.dart';
-import './random_words.dart';
+import 'login.dart';
 
 class RegisterPage extends StatefulWidget {
   @override
@@ -87,10 +86,10 @@ class _RegisterPageState extends State<RegisterPage> {
                   color: Colors.blue, borderRadius: BorderRadius.circular(20)),
               child: FlatButton(
                 onPressed: () {
-                  Navigator.pushAndRemoveUntil(
-                      context,
-                      MaterialPageRoute(builder: (_) => LoginPage()),
-                      (Route<dynamic> route) => false);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => LoginPage()),
+                  );
                 },
                 child: Text(
                   'Register',

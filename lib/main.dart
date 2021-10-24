@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:homeresourcemonitor/register.dart';
-import './random_words.dart';
-import './login.dart';
+import 'user_registration/login.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,6 +10,6 @@ class MyApp extends StatelessWidget {
         theme:
             ThemeData(brightness: Brightness.light, primarySwatch: Colors.blue),
         debugShowCheckedModeBanner: false,
-        home: RegisterPage());
+        home: LoginPage());
   }
 }
