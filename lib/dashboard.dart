@@ -36,8 +36,11 @@ class DashboardPageState extends State<DashboardPage> {
               );
             },
             child: Container(
+              alignment: Alignment.center,
               padding: const EdgeInsets.all(4),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   const Text("Water",
                       style: TextStyle(
@@ -90,6 +93,8 @@ class DashboardPageState extends State<DashboardPage> {
             child: Container(
               padding: const EdgeInsets.all(4),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   const Text("Electricty",
                       style: TextStyle(
@@ -141,6 +146,8 @@ class DashboardPageState extends State<DashboardPage> {
             child: Container(
               padding: const EdgeInsets.all(4),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   const Text("Gas",
                       style: TextStyle(
@@ -193,6 +200,8 @@ class DashboardPageState extends State<DashboardPage> {
             child: Container(
               padding: const EdgeInsets.all(4),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   const Text("Temperature",
                       style: TextStyle(
@@ -244,6 +253,8 @@ class DashboardPageState extends State<DashboardPage> {
             child: Container(
               padding: const EdgeInsets.all(4),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   const Text("Air Quality",
                       style: TextStyle(
@@ -295,6 +306,8 @@ class DashboardPageState extends State<DashboardPage> {
             child: Container(
               padding: const EdgeInsets.all(4),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   const Text(
                     "Internet",

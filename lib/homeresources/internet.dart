@@ -80,7 +80,7 @@ class InternetDetailsState extends State<InternetDetailsPage> {
                   children: [
                     const Center(
                       child: Text(
-                        " Room 1",
+                        " Device 1",
                         style: TextStyle(fontSize: 20),
                       ),
                     ),
@@ -101,7 +101,7 @@ class InternetDetailsState extends State<InternetDetailsPage> {
                     ),
                     const Center(
                       child: Text(
-                        " Room 2",
+                        " Device 2",
                         style: TextStyle(fontSize: 20),
                       ),
                     ),
@@ -122,7 +122,7 @@ class InternetDetailsState extends State<InternetDetailsPage> {
                     ),
                     const Center(
                       child: Text(
-                        " Room 3",
+                        " Device 3",
                         style: TextStyle(fontSize: 20),
                       ),
                     ),
@@ -143,7 +143,7 @@ class InternetDetailsState extends State<InternetDetailsPage> {
                     ),
                     const Center(
                       child: Text(
-                        " Room 4",
+                        " Device 4",
                         style: TextStyle(fontSize: 20),
                       ),
                     ),

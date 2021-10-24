@@ -37,8 +37,8 @@ class MetersState extends State<MetersPage> {
       appBar: AppBar(title: const Text('Devices'), actions: <Widget>[
         IconButton(
             onPressed: () {
-              ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('This is a snackbar')));
+              ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                  content: Text('This is the button to add a device')));
             },
             icon: const Icon(
               Icons.add_box_outlined,
