@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:homeresourcemonitor/reusabledrawer.dart';
-
-import '../dashboard.dart';
+import 'package:homeresourcemonitor/drawer/reusabledrawer.dart';
 
 class AnalyticsPage extends StatefulWidget {
   @override

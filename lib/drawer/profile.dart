@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_settings_screens/flutter_settings_screens.dart';
-import 'package:homeresourcemonitor/reusabledrawer.dart';
-
-import '../dashboard.dart';
+import 'package:homeresourcemonitor/drawer/reusabledrawer.dart';
 
 class ProfilePage extends StatefulWidget {
   @override

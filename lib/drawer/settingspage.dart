@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:english_words/english_words.dart';
 import 'package:flutter_settings_screens/flutter_settings_screens.dart';
-import 'package:homeresourcemonitor/devicespage.dart';
 
-import '../dashboard.dart';
 import 'reusabledrawer.dart';
 
 class SettingsPage extends StatefulWidget {

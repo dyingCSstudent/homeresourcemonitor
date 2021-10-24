@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:homeresourcemonitor/login.dart';
-
+import 'package:homeresourcemonitor/user_registration/login.dart';
 import 'analytics.dart';
 import 'dashboard.dart';
 import 'devicespage.dart';

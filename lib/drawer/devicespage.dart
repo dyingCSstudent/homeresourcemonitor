@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:english_words/english_words.dart';
-import 'package:homeresourcemonitor/settingspage.dart';
-import '../dashboard.dart';
 import 'reusabledrawer.dart';
 
 class MetersPage extends StatefulWidget {

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:english_words/english_words.dart';
+import 'package:homeresourcemonitor/drawer/reusabledrawer.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
-import '../dashboard.dart';
-import '../reusabledrawer.dart';
 
 class TemperatureDetailsPage extends StatefulWidget {
   @override

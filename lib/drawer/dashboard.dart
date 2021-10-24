@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:english_words/english_words.dart';
-import 'package:homeresourcemonitor/devicespage.dart';
 import 'package:homeresourcemonitor/homeresources/air.dart';
 import 'package:homeresourcemonitor/homeresources/electricity.dart';
 import 'package:homeresourcemonitor/homeresources/gas.dart';
 import 'package:homeresourcemonitor/homeresources/internet.dart';
 import 'package:homeresourcemonitor/homeresources/temperature.dart';
 import 'package:homeresourcemonitor/homeresources/water.dart';
-import 'package:homeresourcemonitor/settingspage.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
 import 'reusabledrawer.dart';

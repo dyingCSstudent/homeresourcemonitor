@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:homeresourcemonitor/dashboard.dart';
-import 'package:homeresourcemonitor/register.dart';
+import 'package:homeresourcemonitor/drawer/dashboard.dart';
+import 'package:homeresourcemonitor/user_registration/register.dart';
 
 class LoginPage extends StatefulWidget {
   @override

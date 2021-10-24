@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
-import 'package:homeresourcemonitor/login.dart';
+import 'login.dart';
 
 class RegisterPage extends StatefulWidget {
   @override
