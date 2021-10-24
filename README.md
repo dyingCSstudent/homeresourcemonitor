@@ -1,7 +1,7 @@
 # homeresourcemonitor instructions:
 
--Make sure to have Flutter installed
--Make sure to have an android emulator device
+- Make sure to have Flutter installed
+- Make sure to have an android emulator device
 
 1. Open code in Visual Studio Code.
 2. Go into the 'homeresourcemonitor' directory.
