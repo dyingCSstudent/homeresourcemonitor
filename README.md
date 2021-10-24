@@ -1,16 +1,19 @@
-# homeresourcemonitor
+# homeresourcemonitor instructions:
 
-A new Flutter project.
+-Make sure to have Flutter installed
+-Make sure to have an android emulator device
 
-## Getting Started
+1. Open code in Visual Studio Code.
+2. Go into the 'homeresourcemonitor' directory.
+3. Update Flutter should you require to using 'flutter upgrade' without the single quotation marks
+4. install package dependencies: 
+   - flutter pub add flutter_settings_screens
+   - flutter pub add percent_indicator
+5. Choose the emulator device in the bottom right of Visual Studio Code and start it.
+6. run this command in the terminal 'flutter run --no-sound-null-safety' without the single quotation marks
+7. It will take around a minute or two to start the program in the emulator
+8. The app should be running
 
-This project is a starting point for a Flutter application.
+The grid tiles on the dashboard/home page and the list tiles for the devices on the Devices page are clickable.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
